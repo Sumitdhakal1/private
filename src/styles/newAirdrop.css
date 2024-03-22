@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul, Link {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #f2f5f6;
+}
+
+@media screen and (min-width: 800px) {
+  .container-new-airdrop {
+    margin-left: 2rem;
+    margin-top: 4rem;
+    width: 95%;
+  }
+  .container-new-airdrop .info {
+    margin-bottom: 1rem;
+  }
+  .container-new-airdrop .new-airdrop {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1rem;
+  }
+  .container-new-airdrop .new-airdrop .card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .container-new-airdrop .new-airdrop .card img {
+    width: 20rem;
+  }
+  .container-new-airdrop .second-container {
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=newAirdrop.css.map */

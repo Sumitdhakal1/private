@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul, Link {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #f2f5f6;
+}
+
+@media screen and (min-width: 800px) {
+  .container-airdrop-slider {
+    display: flex;
+  }
+  .container-airdrop-slider .airdrop-slider {
+    width: 80%;
+    height: 40rem;
+    position: relative;
+    display: flex;
+    left: 10rem;
+  }
+  .container-airdrop-slider .airdrop-slider .slider-icon {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .container-airdrop-slider .airdrop-slider .slider-icon .icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+  }
+  .container-airdrop-slider .airdrop-slider .first .info {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 22rem;
+    left: 11rem;
+  }
+  .container-airdrop-slider .airdrop-slider img {
+    border-radius: 1rem;
+    position: absolute;
+  }
+}/*# sourceMappingURL=sliderHome.css.map */

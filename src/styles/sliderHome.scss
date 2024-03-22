@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+
+@media screen and (min-width: 800px) {
+    .container-airdrop-slider {
+        display: flex;
+        .airdrop-slider {
+            width: 80%;
+            height: 40rem;
+           position: relative;
+            display: flex;
+            left: 10rem;
+
+           .slider-icon{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            .icon{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 3rem;
+            }
+           }
+             .first{
+
+             .info{
+            color: white;   
+            z-index: 1;
+           position: absolute;
+            top: 22rem;
+            left: 11rem;
+        }
+
+             }
+
+            img {   
+                border-radius: 1rem;       
+                 position: absolute;
+            }
+
+        }
+
+    }
+             
+}
