@@ -1,32 +1,39 @@
-import React from 'react'
- import "../styles/navbar.scss"
- import { IoReorderThree } from "react-icons/io5";
- import { Navigate, Link, Routes, Route  } from 'react-router-dom';
+import React from "react";
+import "../styles/navbar.scss";
+import { IoReorderThree } from "react-icons/io5";
+import { Route, Routes } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Home from "./home/Home";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
-     <div className="navigation">
+    <div className="navigation">
       <nav>
-          <div className="nav-header">
-        <div className="logo">AirdropHub</div>
-        <IoReorderThree  className='toggle'/>
+        <div className="nav-header">
+          <div className="logo" onClick={() => navigate("/")}>
+            AirdropHub
+          </div>
+
+          <IoReorderThree className="toggle" />
         </div>
-        <ul className='nav-item'>
+        <ul className="nav-item">
           <li>
-          <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-          <a href="./Airdrops/Airdrop">Airdrops</a>
+            <Link to="airdrop">Airdrops</Link>
           </li>
           <li>
-          <a href="">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-          <a href="">Contact us</a>
+            <Link to="/contact">Contact us</Link>
           </li>
         </ul>
       </nav>
-     </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
